@@ -10,3 +10,14 @@ zuul:
       strip-prefix: true
 server:
   port: 9003
+eureka:
+  client:
+    region: default
+    registry-fetch-interval-seconds: 5
+    service-url:
+      default-zone: http://localhost:9002/eureka/
+management:
+  endpoints:
+    web:
+      cors:
+        allowed-origins: ["health", "trace", "info", "metrics"]
