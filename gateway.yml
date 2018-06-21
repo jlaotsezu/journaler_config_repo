@@ -6,8 +6,13 @@ zuul:
   routes:
     api:
       path: "/api/**"
+      sensitive-headers: [Set-Cookie, Authorization]
       service-id: api
       strip-prefix: true
+    discovery:
+      path: "/discovery/**"
+      sensitive-headers: [Set-Cookie, Authorization]
+      url: http://localhost:9002
 server:
   port: 9003
 eureka:
