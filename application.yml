@@ -4,8 +4,8 @@ spring:
     port: 6379
   security:
     user:
-      name: jlaotsezu
-      password: thiendia98l0v3h4nh
+      name: discoveryAdminName
+      password: discoveryAdminPwd
       roles: SYSTEM
   session:
     store-type: redis
