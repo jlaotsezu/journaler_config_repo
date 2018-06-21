@@ -1,0 +1,11 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+  security:
+    user:
+      name: jlaotsezu
+      password: thiendia98l0v3h4nh
+      roles: SYSTEM
+  session:
+    store-type: redis
